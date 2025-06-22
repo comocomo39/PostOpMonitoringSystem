@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1675244930">
+  <File Type="BITSTR-BMM" Name="topmodule_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="topmodule_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="topmodule_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="topmodule_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="topmodule.tcl"/>
+  <File Type="OPT-TIMING" Name="topmodule_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="topmodule_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="topmodule_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="topmodule_reports.tcl"/>
+  <File Type="OPT-DRC" Name="topmodule_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="topmodule.hwdef"/>
+  <File Type="PWROPT-DCP" Name="topmodule_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="topmodule_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="topmodule_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="topmodule_placed.dcp"/>
+  <File Type="PLACE-IO" Name="topmodule_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="topmodule_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="topmodule_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="topmodule_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="topmodule_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="topmodule_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="topmodule_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="topmodule_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="topmodule_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="topmodule.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="topmodule_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="topmodule_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="topmodule_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="topmodule.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="topmodule_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="topmodule_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="topmodule_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="topmodule_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="topmodule_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="topmodule_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="topmodule_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="topmodule.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="topmodule_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="topmodule_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="topmodule_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="topmodule_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="topmodule_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="topmodule_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="topmodule_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="topmodule_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="topmodule_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="topmodule_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="topmodule_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="topmodule_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="topmodule_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="topmodule_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="topmodule_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="topmodule_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="topmodule_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="topmodule_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="topmodule_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="topmodule_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="topmodule_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="topmodule.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="topmodule_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="topmodule.rbt"/>
+  <File Type="BITSTR-NKY" Name="topmodule.nky"/>
+  <File Type="PDI-FILE" Name="topmodule.pdi"/>
+  <File Type="RCFI_FILE" Name="topmodule.rcfi"/>
+  <File Type="CFI_FILE" Name="topmodule.cfi"/>
+  <File Type="RNPI_FILE" Name="topmodule.rnpi"/>
+  <File Type="NPI_FILE" Name="topmodule.npi"/>
+  <File Type="RBD_FILE" Name="topmodule.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="topmodule.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="topmodule.sysdef"/>
+  <File Type="BG-BGN" Name="topmodule.bgn"/>
+  <File Type="BG-DRC" Name="topmodule.drc"/>
+  <File Type="RDI-RDI" Name="topmodule.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/CFSM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/CFSM.v"/>
+        <Attr Name="ImportTime" Val="1674476263"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/Conta24h.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/Conta24h.v"/>
+        <Attr Name="ImportTime" Val="1674639610"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/ContaLev.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/ContaLev.v"/>
+        <Attr Name="ImportTime" Val="1674639685"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/CounterEn.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/CounterEn.v"/>
+        <Attr Name="ImportTime" Val="1674826737"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/EnableCounterDone.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/EnableCounterDone.v"/>
+        <Attr Name="ImportTime" Val="1635343518"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/FSM_Alarm.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/FSM_Alarm.v"/>
+        <Attr Name="ImportTime" Val="1674560258"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FSM_Scritta.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/FSM_SystemCore.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/FSM_SystemCore.v"/>
+        <Attr Name="ImportTime" Val="1674462798"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/FSM_TGC.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/FSM_TGC.v"/>
+        <Attr Name="ImportTime" Val="1674476266"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/FSM_stage.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/FSM_stage.v"/>
+        <Attr Name="ImportTime" Val="1674560631"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/GCuart.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/GCuart.v"/>
+        <Attr Name="ImportTime" Val="1674744457"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/Led_Logic.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/Led_Logic.v"/>
+        <Attr Name="ImportTime" Val="1674560659"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/OMC.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/OMC.v"/>
+        <Attr Name="ImportTime" Val="1673963898"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/OneClkRegister.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/OneClkRegister.v"/>
+        <Attr Name="ImportTime" Val="1635343110"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/Ready_Gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/Ready_Gen.v"/>
+        <Attr Name="ImportTime" Val="1674826565"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/RegPar.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/RegPar.v"/>
+        <Attr Name="ImportTime" Val="1623618718"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/SPI_2slave.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/SPI_2slave.v"/>
+        <Attr Name="ImportTime" Val="1674222474"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/SPI_master.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/SPI_master.v"/>
+        <Attr Name="ImportTime" Val="1674826582"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/SPI_slave.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/SPI_slave.v"/>
+        <Attr Name="ImportTime" Val="1674826587"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/SPI_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/SPI_top.v"/>
+        <Attr Name="ImportTime" Val="1674826593"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/Soglia.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/Soglia.v"/>
+        <Attr Name="ImportTime" Val="1673960512"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/System_Core.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/Top_Dispatcher.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/Top_Dispatcher.v"/>
+        <Attr Name="ImportTime" Val="1674214086"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/Tr_module.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/Tr_module.v"/>
+        <Attr Name="ImportTime" Val="1674657929"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/Uart_codifica.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/Uart_codifica.v"/>
+        <Attr Name="ImportTime" Val="1674752774"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/andecoder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/andecoder.v"/>
+        <Attr Name="ImportTime" Val="1653920332"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/boud_rate_clk_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/boud_rate_clk_gen.v"/>
+        <Attr Name="ImportTime" Val="1612636950"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/cat.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/cat.v"/>
+        <Attr Name="ImportTime" Val="1674560274"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/clk_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/clk_gen.v"/>
+        <Attr Name="ImportTime" Val="1674826540"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/cnt.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/cnt.v"/>
+        <Attr Name="ImportTime" Val="1653906760"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/contalettere.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/contalettere.v"/>
+        <Attr Name="ImportTime" Val="1674752278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/counter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/counter.v"/>
+        <Attr Name="ImportTime" Val="1612285154"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/counter_SPI.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/counter_SPI.v"/>
+        <Attr Name="ImportTime" Val="1674826545"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/counter_clr.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/counter_clr.v"/>
+        <Attr Name="ImportTime" Val="1612625868"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/counter_parameter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/counter_parameter.v"/>
+        <Attr Name="ImportTime" Val="1653991220"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/counter_up.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/counter_up.v"/>
+        <Attr Name="ImportTime" Val="1674826517"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/data_buf.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/data_buf.v"/>
+        <Attr Name="ImportTime" Val="1612629016"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/debouncer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/debouncer.v"/>
+        <Attr Name="ImportTime" Val="1635343900"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/decoder_SS.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/decoder_SS.v"/>
+        <Attr Name="ImportTime" Val="1674826493"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/doctor.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/doctor.v"/>
+        <Attr Name="ImportTime" Val="1674485639"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/dp.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/dp.v"/>
+        <Attr Name="ImportTime" Val="1653921621"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/fsm.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/fsm.v"/>
+        <Attr Name="ImportTime" Val="1674741987"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/fsm_SPI_master.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/fsm_SPI_master.v"/>
+        <Attr Name="ImportTime" Val="1674826553"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/fsm_r.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/fsm_r.v"/>
+        <Attr Name="ImportTime" Val="1617788802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/gen_refresh.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/gen_refresh.v"/>
+        <Attr Name="ImportTime" Val="1653991807"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/mb_detector.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/mb_detector.v"/>
+        <Attr Name="ImportTime" Val="1612638392"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/modeAdapter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/modeAdapter.v"/>
+        <Attr Name="ImportTime" Val="1674826560"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/mux.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/mux.v"/>
+        <Attr Name="ImportTime" Val="1653904617"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/register.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/register.v"/>
+        <Attr Name="ImportTime" Val="1674826571"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/registro.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/registro.v"/>
+        <Attr Name="ImportTime" Val="1674578583"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/simple_dual_one_clock.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/simple_dual_one_clock.v"/>
+        <Attr Name="ImportTime" Val="1674646120"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/top.v"/>
+        <Attr Name="ImportTime" Val="1674571911"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/top_DUT.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/top_DUT.v"/>
+        <Attr Name="ImportTime" Val="1617788556"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/top_LEV.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/top_LEV.v"/>
+        <Attr Name="ImportTime" Val="1674415281"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/top_POST.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/top_POST.v"/>
+        <Attr Name="ImportTime" Val="1674473850"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/top_rx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/top_rx.v"/>
+        <Attr Name="ImportTime" Val="1617787408"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/top_tx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/top_tx.v"/>
+        <Attr Name="ImportTime" Val="1674578369"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/progettosea/topmodule.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../progettosea/topmodule.v"/>
+        <Attr Name="ImportTime" Val="1674753974"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="topmodule"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/xdc.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/xdc.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

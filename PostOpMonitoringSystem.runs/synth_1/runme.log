@@ -1,0 +1,833 @@
+
+*** Running vivado
+    with args -log topmodule.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source topmodule.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source topmodule.tcl -notrace
+Command: synth_design -top topmodule -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12408
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1001.852 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'topmodule' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/topmodule.v:23]
+	Parameter BITSPI bound to: 8 - type: integer 
+	Parameter SPI_MODE bound to: 3 - type: integer 
+	Parameter SPI_CLK_DIVIDER bound to: 8 - type: integer 
+	Parameter CLKS_PER_HALF_BIT bound to: 4 - type: integer 
+	Parameter MAX_EDGE_GEN bound to: 16 - type: integer 
+	Parameter SPI_SIZE bound to: 2 - type: integer 
+	Parameter SS_SIZE bound to: 2 - type: integer 
+	Parameter DATABITS bound to: 8 - type: integer 
+	Parameter MAXD bound to: 50000000 - type: integer 
+	Parameter MAXLEV bound to: 500 - type: integer 
+	Parameter MAXB bound to: 9 - type: integer 
+	Parameter Nbit bound to: 26 - type: integer 
+	Parameter DATAB bound to: 8 - type: integer 
+	Parameter DATAORE bound to: 4 - type: integer 
+	Parameter DATAL bound to: 7 - type: integer 
+	Parameter STAGE bound to: 3 - type: integer 
+	Parameter DATO bound to: 2 - type: integer 
+	Parameter DUMMY bound to: 8 - type: integer 
+	Parameter LEDB bound to: 16 - type: integer 
+	Parameter TT bound to: 6666667 - type: integer 
+	Parameter BITT bound to: 23 - type: integer 
+	Parameter DATA_BW bound to: 8 - type: integer 
+	Parameter DATA_BW_BIT bound to: 4 - type: integer 
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+	Parameter BAUD_COUNT bound to: 10416 - type: integer 
+	Parameter BAUD_BIT bound to: 14 - type: integer 
+	Parameter BAUD_COUNT_x16 bound to: 651 - type: integer 
+	Parameter BAUD_BIT_x16 bound to: 10 - type: integer 
+	Parameter OVER_SAMPL bound to: 16 - type: integer 
+	Parameter OVER_SAMPL_BIT bound to: 5 - type: integer 
+	Parameter ClkXBit bound to: 10415 - type: integer 
+	Parameter BitClk bound to: 14 - type: integer 
+	Parameter Word bound to: 8 - type: integer 
+	Parameter BitWord bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'System_Core' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/new/System_Core.v:23]
+	Parameter MAXLEV bound to: 500 - type: integer 
+	Parameter MAXB bound to: 9 - type: integer 
+	Parameter Nbit bound to: 26 - type: integer 
+	Parameter MAXD bound to: 50000000 - type: integer 
+	Parameter DATABITS bound to: 8 - type: integer 
+	Parameter DATAB bound to: 8 - type: integer 
+	Parameter DATAORE bound to: 4 - type: integer 
+	Parameter DATAL bound to: 7 - type: integer 
+	Parameter STAGE bound to: 3 - type: integer 
+	Parameter DATO bound to: 2 - type: integer 
+	Parameter DUMMY bound to: 8 - type: integer 
+	Parameter LEDB bound to: 16 - type: integer 
+	Parameter TT bound to: 6666667 - type: integer 
+	Parameter BITT bound to: 23 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/debouncer.v:23]
+	Parameter Nbit bound to: 26 - type: integer 
+	Parameter MAX bound to: 50000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'EnableCounterDone' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/EnableCounterDone.v:23]
+	Parameter Nbit bound to: 26 - type: integer 
+	Parameter MAX bound to: 50000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'EnableCounterDone' (1#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/EnableCounterDone.v:23]
+INFO: [Synth 8-6157] synthesizing module 'OneClkRegister' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/OneClkRegister.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'OneClkRegister' (2#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/OneClkRegister.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (3#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/debouncer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ContaLev' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/ContaLev.v:23]
+	Parameter MAX bound to: 500 - type: integer 
+	Parameter MAXB bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ContaLev' (4#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/ContaLev.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Conta24h' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/Conta24h.v:23]
+	Parameter OMmax bound to: 6666667 - type: integer 
+	Parameter OMbit bound to: 23 - type: integer 
+	Parameter DATAORE bound to: 4 - type: integer 
+	Parameter MIN bound to: 9 - type: integer 
+	Parameter DMIN bound to: 5 - type: integer 
+	Parameter ORE bound to: 9 - type: integer 
+	Parameter DORE bound to: 2 - type: integer 
+	Parameter SIZE bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'OMC' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/OMC.v:24]
+	Parameter Max bound to: 6666667 - type: integer 
+	Parameter Nbit bound to: 23 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OMC' (5#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/OMC.v:24]
+INFO: [Synth 8-6157] synthesizing module 'CounterEn' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/CounterEn.v:23]
+	Parameter SIZE bound to: 4 - type: integer 
+	Parameter MAX bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'CounterEn' (6#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/CounterEn.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CounterEn__parameterized0' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/CounterEn.v:23]
+	Parameter SIZE bound to: 4 - type: integer 
+	Parameter MAX bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'CounterEn__parameterized0' (6#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/CounterEn.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CounterEn__parameterized1' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/CounterEn.v:23]
+	Parameter SIZE bound to: 4 - type: integer 
+	Parameter MAX bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'CounterEn__parameterized1' (6#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/CounterEn.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Conta24h' (7#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/Conta24h.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FSM_SystemCore' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/FSM_SystemCore.v:23]
+	Parameter IDLE bound to: 4'b0000 
+	Parameter POST_OP bound to: 4'b0001 
+	Parameter STATUS bound to: 4'b0010 
+	Parameter CHANGE bound to: 4'b0011 
+	Parameter HISTORY bound to: 4'b0100 
+	Parameter SOMMA bound to: 4'b0101 
+	Parameter ALARM bound to: 4'b0110 
+INFO: [Synth 8-6155] done synthesizing module 'FSM_SystemCore' (8#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/FSM_SystemCore.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Soglia' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/Soglia.v:23]
+	Parameter MAXB bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Soglia' (9#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/Soglia.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FSM_Alarm' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/FSM_Alarm.v:23]
+	Parameter IDLE bound to: 2'b00 
+	Parameter POST_OP bound to: 2'b01 
+	Parameter ALARM bound to: 2'b10 
+	Parameter ALARM2 bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/FSM_Alarm.v:40]
+INFO: [Synth 8-226] default block is never used [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/FSM_Alarm.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'FSM_Alarm' (10#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/FSM_Alarm.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FSM_GC' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/FSM_TGC.v:23]
+	Parameter DATO bound to: 2 - type: integer 
+	Parameter DUMMY bound to: 8 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter SPI1 bound to: 2'b01 
+	Parameter SPI2 bound to: 2'b10 
+	Parameter Onecicle bound to: 2'b11 
+	Parameter C1 bound to: 2'b01 
+	Parameter C2 bound to: 2'b10 
+	Parameter C3 bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/FSM_TGC.v:51]
+INFO: [Synth 8-226] default block is never used [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/FSM_TGC.v:64]
+INFO: [Synth 8-226] default block is never used [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/FSM_TGC.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'FSM_GC' (11#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/FSM_TGC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FSM_stage' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/FSM_stage.v:23]
+	Parameter MAXB bound to: 9 - type: integer 
+	Parameter STAGE bound to: 3 - type: integer 
+	Parameter IDLE bound to: 3'b000 
+	Parameter S0 bound to: 3'b001 
+	Parameter S1 bound to: 3'b010 
+	Parameter S2 bound to: 3'b011 
+	Parameter S3 bound to: 3'b100 
+	Parameter S4 bound to: 3'b101 
+INFO: [Synth 8-6155] done synthesizing module 'FSM_stage' (12#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/FSM_stage.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CFSM' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/CFSM.v:23]
+	Parameter DATO bound to: 2 - type: integer 
+	Parameter IDLE bound to: 3'b000 
+	Parameter S1 bound to: 3'b001 
+	Parameter S2 bound to: 2'b10 
+	Parameter S1x bound to: 3'b011 
+	Parameter S2x bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'CFSM' (13#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/CFSM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Led_Logic' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/Led_Logic.v:23]
+	Parameter STAGE bound to: 3 - type: integer 
+	Parameter LEDB bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Led_Logic' (14#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/Led_Logic.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display7segmenti' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/top.v:3]
+	Parameter MAXB bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dp' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/dp.v:3]
+INFO: [Synth 8-6157] synthesizing module 'cnt' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/cnt.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'cnt' (15#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/cnt.v:2]
+INFO: [Synth 8-6157] synthesizing module 'mux' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/mux.v:2]
+INFO: [Synth 8-226] default block is never used [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/mux.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mux' (16#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/mux.v:2]
+INFO: [Synth 8-6157] synthesizing module 'cat' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/cat.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'cat' (17#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/cat.v:3]
+INFO: [Synth 8-6157] synthesizing module 'andecoder' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/andecoder.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'andecoder' (18#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/andecoder.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'dp' (19#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/dp.v:3]
+INFO: [Synth 8-6157] synthesizing module 'gen_refresh' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/gen_refresh.v:3]
+	Parameter MAX bound to: 6250 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'counter_PARAM' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/counter_parameter.v:2]
+	Parameter CNT_MAX bound to: 6250 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter_PARAM' (20#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/counter_parameter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'gen_refresh' (21#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/gen_refresh.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'display7segmenti' (22#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'simple_dual_one_clock' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/simple_dual_one_clock.v:23]
+	Parameter DATAORE bound to: 4 - type: integer 
+	Parameter STAGE bound to: 3 - type: integer 
+	Parameter LIVELLO bound to: 9 - type: integer 
+	Parameter CNTL bound to: 7 - type: integer 
+	Parameter IDLE bound to: 1'b0 
+	Parameter LEV bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'simple_dual_one_clock' (23#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/simple_dual_one_clock.v:23]
+INFO: [Synth 8-6157] synthesizing module 'contalettere' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/contalettere.v:23]
+	Parameter max bound to: 7 - type: integer 
+	Parameter IDLE bound to: 3'b000 
+	Parameter WAIT bound to: 3'b001 
+	Parameter SEND bound to: 3'b010 
+	Parameter WAIT2 bound to: 3'b011 
+	Parameter FINE bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'contalettere' (24#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/contalettere.v:23]
+INFO: [Synth 8-6157] synthesizing module 'GCuart' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/GCuart.v:23]
+	Parameter IDLE bound to: 3'b000 
+	Parameter LEV bound to: 3'b001 
+	Parameter CHANGE bound to: 3'b010 
+	Parameter ALARM bound to: 3'b011 
+	Parameter STAGE bound to: 3'b100 
+	Parameter POSTOP bound to: 3'b101 
+	Parameter HISTORY bound to: 3'b110 
+INFO: [Synth 8-6155] done synthesizing module 'GCuart' (25#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/GCuart.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FSM_Scritta' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/new/FSM_Scritta.v:23]
+	Parameter IDLE bound to: 2'b00 
+	Parameter S0 bound to: 2'b01 
+	Parameter S1 bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'FSM_Scritta' (26#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/new/FSM_Scritta.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'System_Core' (27#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/new/System_Core.v:23]
+INFO: [Synth 8-6157] synthesizing module 'doctor' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/doctor.v:23]
+	Parameter Nbit bound to: 26 - type: integer 
+	Parameter nMAX bound to: 50000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'doctor' (28#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/doctor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Top_Dispatcher' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/Top_Dispatcher.v:23]
+	Parameter SPI_MODE bound to: 3 - type: integer 
+	Parameter SPI_CLK_DIVIDER bound to: 8 - type: integer 
+	Parameter CLKS_PER_HALF_BIT bound to: 4 - type: integer 
+	Parameter MAX_EDGE_GEN bound to: 16 - type: integer 
+	Parameter SPI_SIZE bound to: 2 - type: integer 
+	Parameter SS_SIZE bound to: 2 - type: integer 
+	Parameter DATABITS bound to: 8 - type: integer 
+	Parameter BITSPI bound to: 8 - type: integer 
+	Parameter DATA_BW bound to: 8 - type: integer 
+	Parameter DATA_BW_BIT bound to: 4 - type: integer 
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+	Parameter BAUD_COUNT bound to: 10416 - type: integer 
+	Parameter BAUD_BIT bound to: 14 - type: integer 
+	Parameter BAUD_COUNT_x16 bound to: 651 - type: integer 
+	Parameter BAUD_BIT_x16 bound to: 10 - type: integer 
+	Parameter OVER_SAMPL bound to: 16 - type: integer 
+	Parameter OVER_SAMPL_BIT bound to: 5 - type: integer 
+	Parameter ClkXBit bound to: 10415 - type: integer 
+	Parameter BitClk bound to: 14 - type: integer 
+	Parameter Word bound to: 8 - type: integer 
+	Parameter BitWord bound to: 3 - type: integer 
+	Parameter DATAB bound to: 8 - type: integer 
+	Parameter DATAORE bound to: 4 - type: integer 
+	Parameter DATAL bound to: 7 - type: integer 
+	Parameter LIVELLO bound to: 9 - type: integer 
+	Parameter STAGE bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'top_DUT' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/top_DUT.v:26]
+	Parameter DATA_BW bound to: 8 - type: integer 
+	Parameter DATA_BW_BIT bound to: 4 - type: integer 
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+	Parameter BAUD_COUNT bound to: 10416 - type: integer 
+	Parameter BAUD_BIT bound to: 14 - type: integer 
+	Parameter BAUD_COUNT_x16 bound to: 651 - type: integer 
+	Parameter BAUD_BIT_x16 bound to: 10 - type: integer 
+	Parameter OVER_SAMPL bound to: 16 - type: integer 
+	Parameter OVER_SAMPL_BIT bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'top_tx' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/top_tx.v:23]
+	Parameter DATA_BW bound to: 8 - type: integer 
+	Parameter DATA_BW_BIT bound to: 4 - type: integer 
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+	Parameter BAUD_COUNT bound to: 10416 - type: integer 
+	Parameter BAUD_BIT bound to: 14 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'registro' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/registro.v:22]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'registro' (29#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/registro.v:22]
+INFO: [Synth 8-6157] synthesizing module 'baud_rate_clk_gen' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/boud_rate_clk_gen.v:23]
+	Parameter BAUD_CNT bound to: 10416 - type: integer 
+	Parameter BAUD_BIT bound to: 14 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/counter.v:23]
+	Parameter MAX bound to: 10416 - type: integer 
+	Parameter N_BIT bound to: 14 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (30#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'baud_rate_clk_gen' (31#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/boud_rate_clk_gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/counter.v:23]
+	Parameter MAX bound to: 8 - type: integer 
+	Parameter N_BIT bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (31#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fsm_t' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/fsm.v:23]
+	Parameter DATA_BW bound to: 8 - type: integer 
+	Parameter DATA_BW_BIT bound to: 4 - type: integer 
+	Parameter IDLE bound to: 3'b000 
+	Parameter START bound to: 3'b001 
+	Parameter DATA bound to: 3'b010 
+	Parameter STOP_1 bound to: 3'b011 
+	Parameter STOP_2 bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'fsm_t' (32#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/fsm.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_tx' (33#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/top_tx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'top_rx' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/top_rx.v:22]
+	Parameter DATA_BW bound to: 8 - type: integer 
+	Parameter DATA_BW_BIT bound to: 4 - type: integer 
+	Parameter BAUD_COUNT_x16 bound to: 651 - type: integer 
+	Parameter BAUD_BIT_x16 bound to: 10 - type: integer 
+	Parameter OVER_SAMPL bound to: 16 - type: integer 
+	Parameter OVER_SAMPL_BIT bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'baud_rate_clk_gen__parameterized0' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/boud_rate_clk_gen.v:23]
+	Parameter BAUD_CNT bound to: 651 - type: integer 
+	Parameter BAUD_BIT bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized1' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/counter.v:23]
+	Parameter MAX bound to: 651 - type: integer 
+	Parameter N_BIT bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized1' (33#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'baud_rate_clk_gen__parameterized0' (33#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/boud_rate_clk_gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mb_detector' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/mb_detector.v:23]
+	Parameter OVER_SAMPL bound to: 16 - type: integer 
+	Parameter OVER_SAMPL_BIT bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized2' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/counter.v:23]
+	Parameter MAX bound to: 16 - type: integer 
+	Parameter N_BIT bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized2' (33#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mb_detector' (34#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/mb_detector.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter_clr' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/counter_clr.v:23]
+	Parameter MAX bound to: 8 - type: integer 
+	Parameter N_BIT bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter_clr' (35#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/counter_clr.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fsm_r' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/fsm_r.v:23]
+	Parameter IDLE bound to: 3'b000 
+	Parameter START bound to: 3'b001 
+	Parameter DATA bound to: 3'b010 
+	Parameter STOP_1 bound to: 3'b011 
+	Parameter STOP_2 bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'fsm_r' (36#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/fsm_r.v:23]
+INFO: [Synth 8-6157] synthesizing module 'data_buf' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/data_buf.v:23]
+	Parameter BUF_SIZE bound to: 8 - type: integer 
+	Parameter BUF_SIZE_BIT bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'data_buf' (37#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/data_buf.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_rx' (38#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/top_rx.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'top_DUT' (39#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/top_DUT.v:26]
+INFO: [Synth 8-6157] synthesizing module 'Tr_Module' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/Tr_module.v:22]
+	Parameter ClkXBit bound to: 10415 - type: integer 
+	Parameter BitClk bound to: 14 - type: integer 
+	Parameter Word bound to: 8 - type: integer 
+	Parameter BitWord bound to: 3 - type: integer 
+	Parameter IDLE bound to: 3'b000 
+	Parameter TX_START_BIT bound to: 3'b001 
+	Parameter TX_DATA_BITS bound to: 3'b010 
+	Parameter TX_STOP_BIT bound to: 3'b011 
+	Parameter CLEANUP bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'RegPar' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/RegPar.v:23]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RegPar' (40#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/RegPar.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Tr_Module' (41#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/Tr_module.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Uart_codifica' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/Uart_codifica.v:23]
+	Parameter DATAB bound to: 8 - type: integer 
+	Parameter DATAORE bound to: 4 - type: integer 
+	Parameter DATAL bound to: 7 - type: integer 
+	Parameter LIVELLO bound to: 9 - type: integer 
+	Parameter STAGE bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Uart_codifica' (42#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/Uart_codifica.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SPI_2slave' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/SPI_2slave.v:23]
+	Parameter SPI_MODE bound to: 3 - type: integer 
+	Parameter SPI_CLK_DIVIDER bound to: 8 - type: integer 
+	Parameter CLKS_PER_HALF_BIT bound to: 4 - type: integer 
+	Parameter MAX_EDGE_GEN bound to: 16 - type: integer 
+	Parameter SPI_SIZE bound to: 2 - type: integer 
+	Parameter SS_SIZE bound to: 2 - type: integer 
+	Parameter DATABITS bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'SPI_top' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/SPI_top.v:23]
+	Parameter SPI_MODE bound to: 3 - type: integer 
+	Parameter SPI_CLK_DIVIDER bound to: 8 - type: integer 
+	Parameter CLKS_PER_HALF_BIT bound to: 4 - type: integer 
+	Parameter MAX_EDGE_GEN bound to: 16 - type: integer 
+	Parameter SPI_SIZE bound to: 2 - type: integer 
+	Parameter SS_SIZE bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'SPI_master' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/SPI_master.v:23]
+	Parameter SPI_MODE bound to: 3 - type: integer 
+	Parameter SPI_CLK_DIVIDER bound to: 8 - type: integer 
+	Parameter CLKS_PER_HALF_BIT bound to: 4 - type: integer 
+	Parameter MAX_EDGE_GEN bound to: 16 - type: integer 
+	Parameter SPI_SIZE bound to: 2 - type: integer 
+	Parameter SS_SIZE bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/register.v:23]
+	Parameter SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register' (43#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/register.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fsm_SPI_master' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/fsm_SPI_master.v:23]
+	Parameter IDLE bound to: 1'b0 
+	Parameter TRX bound to: 1'b1 
+INFO: [Synth 8-226] default block is never used [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/fsm_SPI_master.v:43]
+INFO: [Synth 8-226] default block is never used [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/fsm_SPI_master.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'fsm_SPI_master' (44#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/fsm_SPI_master.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_gen' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/clk_gen.v:23]
+	Parameter SPI_MODE bound to: 3 - type: integer 
+	Parameter HALF_BIT_NUM bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_gen' (45#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/clk_gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'modeAdapter' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/modeAdapter.v:23]
+	Parameter SPI_MODE bound to: 3 - type: integer 
+	Parameter MAX_EDGE_GEN bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'modeAdapter' (46#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/modeAdapter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Ready_Gen' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/Ready_Gen.v:23]
+	Parameter HALF_BIT_NUM bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Ready_Gen' (47#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/Ready_Gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter_SPI' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/counter_SPI.v:23]
+	Parameter MAX bound to: 8 - type: integer 
+	Parameter N_BIT bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter_SPI' (48#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/counter_SPI.v:23]
+INFO: [Synth 8-6157] synthesizing module 'decoder_SS' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/decoder_SS.v:23]
+	Parameter CODE_SIZE bound to: 2 - type: integer 
+	Parameter SS_SIZE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'decoder_SS' (49#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/decoder_SS.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SPI_master' (50#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/SPI_master.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SPI_slave' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/SPI_slave.v:23]
+	Parameter SPI_MODE bound to: 3 - type: integer 
+	Parameter SPI_CLK_DIVIDER bound to: 8 - type: integer 
+	Parameter CLKS_PER_HALF_BIT bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'modeAdapterS' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/modeAdapter.v:84]
+	Parameter SPI_MODE bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'modeAdapterS' (51#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/modeAdapter.v:84]
+INFO: [Synth 8-6157] synthesizing module 'counter_up' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/counter_up.v:23]
+	Parameter MAX bound to: 8 - type: integer 
+	Parameter N_BIT bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter_up' (52#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/counter_up.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SPI_slave' (53#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/SPI_slave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SPI_top' (54#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/SPI_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'top_LEV' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/top_LEV.v:23]
+	Parameter DATABITS bound to: 8 - type: integer 
+	Parameter SIZE bound to: 1 - type: integer 
+	Parameter Nbit bound to: 200 - type: integer 
+	Parameter MAX bound to: 1000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'top_LEV' (55#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/top_LEV.v:23]
+INFO: [Synth 8-6157] synthesizing module 'top_POST' [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/top_POST.v:23]
+	Parameter DATABITS bound to: 8 - type: integer 
+	Parameter SIZE bound to: 1 - type: integer 
+	Parameter Nbit bound to: 200 - type: integer 
+	Parameter MAX bound to: 1000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'top_POST' (56#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/top_POST.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SPI_2slave' (57#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/SPI_2slave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Dispatcher' (58#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/Top_Dispatcher.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'topmodule' (59#1) [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/sources_1/imports/progettosea/topmodule.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1001.852 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1001.852 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1001.852 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1001.852 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/constrs_1/new/xdc.xdc]
+Finished Parsing XDC File [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/constrs_1/new/xdc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.srcs/constrs_1/new/xdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/topmodule_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/topmodule_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1001.852 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1001.852 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1001.852 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1001.852 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1001.852 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'FSM_SystemCore'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'FSM_Alarm'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'FSM_GC'
+INFO: [Synth 8-802] inferred FSM for state register 'c_reg' in module 'FSM_GC'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'FSM_stage'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'CFSM'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'contalettere'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'GCuart'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'FSM_Scritta'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm_t'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm_r'
+INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'Tr_Module'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                             0000
+                 POST_OP |                              001 |                             0001
+                  STATUS |                              010 |                             0010
+                 HISTORY |                              011 |                             0100
+                   ALARM |                              100 |                             0110
+                   SOMMA |                              101 |                             0101
+                  CHANGE |                              110 |                             0011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'FSM_SystemCore'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                 POST_OP |                               01 |                               01
+                   ALARM |                               10 |                               10
+                  ALARM2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'FSM_Alarm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                      C1 |                               01 |                               01
+                      C2 |                               10 |                               10
+                      C3 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_reg' using encoding 'sequential' in module 'FSM_GC'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                    SPI2 |                               01 |                               10
+                    SPI1 |                               10 |                               01
+                Onecicle |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'FSM_GC'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                      S0 |                              001 |                              001
+                      S1 |                              010 |                              010
+                      S2 |                              011 |                              011
+                      S3 |                              100 |                              100
+                      S4 |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'FSM_stage'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                      S1 |                              001 |                              001
+                     S1x |                              010 |                              011
+                      S2 |                              011 |                              010
+                     S2x |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'CFSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                              000
+                    SEND |                               01 |                              010
+                    WAIT |                               10 |                              001
+                   WAIT2 |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'contalettere'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                  POSTOP |                              001 |                              101
+                 HISTORY |                              010 |                              110
+                     LEV |                              011 |                              001
+                  CHANGE |                              100 |                              010
+                   STAGE |                              101 |                              100
+                   ALARM |                              110 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'GCuart'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                      S0 |                               01 |                               01
+                      S1 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'FSM_Scritta'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                   START |                              001 |                              001
+                    DATA |                              010 |                              010
+                  STOP_1 |                              011 |                              011
+                  STOP_2 |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'fsm_t'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                            00001 |                              000
+                   START |                            00010 |                              001
+                    DATA |                            00100 |                              010
+                  STOP_1 |                            01000 |                              011
+                  STOP_2 |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fsm_r'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                            00001 |                              000
+            TX_START_BIT |                            00010 |                              001
+            TX_DATA_BITS |                            00100 |                              010
+             TX_STOP_BIT |                            01000 |                              011
+                 CLEANUP |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'one-hot' in module 'Tr_Module'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1001.852 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   26 Bit       Adders := 3     
+	   2 Input   14 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 8     
+	   2 Input    3 Bit       Adders := 9     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               26 Bit    Registers := 3     
+	               14 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 9     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 10    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 31    
++---Muxes : 
+	   2 Input   28 Bit        Muxes := 1     
+	   2 Input   26 Bit        Muxes := 9     
+	 102 Input   22 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 5     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 2     
+	   6 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 5     
+	  63 Input    8 Bit        Muxes := 1     
+	   7 Input    7 Bit        Muxes := 1     
+	   4 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 4     
+	  25 Input    7 Bit        Muxes := 1     
+	   7 Input    6 Bit        Muxes := 5     
+	   2 Input    6 Bit        Muxes := 4     
+	   4 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 12    
+	   5 Input    5 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 24    
+	   4 Input    4 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 1     
+	  32 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 21    
+	   5 Input    3 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	  14 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 6     
+	   2 Input    2 Bit        Muxes := 22    
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 57    
+	   4 Input    1 Bit        Muxes := 9     
+	   5 Input    1 Bit        Muxes := 8     
+	  16 Input    1 Bit        Muxes := 7     
+	   7 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1001.852 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++---------------+------------+---------------+----------------+
+|Module Name    | RTL Object | Depth x Width | Implemented As | 
++---------------+------------+---------------+----------------+
+|Uart_codifica  | dataout    | 32x7          | LUT            | 
+|Uart_codifica  | dataout    | 32x7          | LUT            | 
+|Uart_codifica  | dataout    | 64x7          | LUT            | 
+|Top_Dispatcher | uc/dataout | 32x7          | LUT            | 
+|Top_Dispatcher | uc/dataout | 32x7          | LUT            | 
+|Top_Dispatcher | uc/dataout | 64x7          | LUT            | 
+|Top_Dispatcher | uc/dataout | 32x7          | LUT            | 
++---------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1001.852 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 1054.906 ; gain = 53.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1055.949 ; gain = 54.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 1055.949 ; gain = 54.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 1055.949 ; gain = 54.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1055.949 ; gain = 54.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1055.949 ; gain = 54.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1055.949 ; gain = 54.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1055.949 ; gain = 54.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    50|
+|3     |LUT1   |     6|
+|4     |LUT2   |   149|
+|5     |LUT3   |   166|
+|6     |LUT4   |   102|
+|7     |LUT5   |   155|
+|8     |LUT6   |   304|
+|9     |MUXF7  |     3|
+|10    |FDCE   |   356|
+|11    |FDPE   |    22|
+|12    |FDRE   |     8|
+|13    |IBUF   |     7|
+|14    |OBUF   |    28|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1055.949 ; gain = 54.098
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:50 ; elapsed = 00:01:05 . Memory (MB): peak = 1055.949 ; gain = 54.098
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:11 . Memory (MB): peak = 1055.949 ; gain = 54.098
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1067.824 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 53 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1067.824 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+177 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:17 ; elapsed = 00:01:24 . Memory (MB): peak = 1067.824 ; gain = 65.973
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Andrea/Desktop/PostOpMonitoringSystem/PostOpMonitoringSystem.runs/synth_1/topmodule.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file topmodule_utilization_synth.rpt -pb topmodule_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Feb  1 10:50:30 2023...
